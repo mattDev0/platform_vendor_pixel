@@ -14,11 +14,11 @@
 # limitations under the License.
 #
 
-# Hentai Overlays
+# Pixel Overlays
 PRODUCT_PACKAGES += \
-    HentaiConfigOverlay \
-    PixelSetupWizardOverlayHentai \
-    SettingsGoogleOverlayHentai
+    PixelConfigOverlay \
+    PixelSetupWizardOverlayPixel \
+    SettingsGoogleOverlayPixel
 
 # Google Overlays
 PRODUCT_PACKAGES += \
