@@ -14,4 +14,4 @@
 # limitations under the License.
 
 # Rules for QCOM targets
-include $(TOPDIR)vendor/hentai/build/core/qcom_target.mk
+include $(TOPDIR)vendor/pixel/build/core/qcom_target.mk

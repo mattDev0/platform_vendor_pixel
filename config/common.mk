@@ -65,37 +65,37 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.mediadrmservice.enable=true
 
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/hentai/overlay
+    vendor/pixel/overlay
 
 # Inherit from lewdboratory config
-$(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
+$(call inherit-product-if-exists, vendor/prebuilts/packages.mk)
 
 # Inherit from apex config
-$(call inherit-product, vendor/hentai/config/apex.mk)
+$(call inherit-product, vendor/pixel/config/apex.mk)
 
 # Inherit from audio config
-$(call inherit-product, vendor/hentai/config/audio.mk)
+$(call inherit-product, vendor/pixel/config/audio.mk)
 
 # Inherit from bootanimation config
-$(call inherit-product, vendor/hentai/config/bootanimation.mk)
+$(call inherit-product, vendor/pixel/config/bootanimation.mk)
 
 # Inherit from gfonts config
-$(call inherit-product, vendor/hentai/config/gfonts.mk)
+$(call inherit-product, vendor/pixel/config/gfonts.mk)
 
 # Inherit from fonts config
-$(call inherit-product, vendor/hentai/config/fonts.mk)
+$(call inherit-product, vendor/pixel/config/fonts.mk)
 
 # Inherit from rro_overlays config
-$(call inherit-product, vendor/hentai/config/rro_overlays.mk)
+$(call inherit-product, vendor/pixel/config/rro_overlays.mk)
 
 # Inherit from sepolicy config
-$(call inherit-product, vendor/hentai/config/sepolicy.mk)
+$(call inherit-product, vendor/pixel/config/sepolicy.mk)
 
 # Inherit from textclassifier config
-$(call inherit-product, vendor/hentai/config/textclassifier.mk)
+$(call inherit-product, vendor/pixel/config/textclassifier.mk)
 
 # Inherit from our versioning
-$(call inherit-product, vendor/hentai/config/versioning.mk)
+$(call inherit-product, vendor/pixel/config/versioning.mk)
 
 # Inherit from GMS product config
 $(call inherit-product, vendor/gms/gms_full.mk)

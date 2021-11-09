@@ -17,20 +17,20 @@
 
 BUILD_ID_LC ?= $(shell echo $(BUILD_ID) | tr '[:upper:]' '[:lower:]')
 
-PLATFORM_HENTAI_RELEASE := SaltyIceCream
+PLATFORM_PIXEL_RELEASE := SnowCone
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
-    PLATFORM_HENTAI_VERSION := $(PLATFORM_HENTAI_RELEASE).Furry.$(shell date +%m%d%H%M)
-    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-ota-$(BUILD_ID_LC)-Furry.$(shell date +%m%d%H%M)
+    PLATFORM_PIXEL_VERSION := $(PLATFORM_PIXEL_RELEASE).SnowCone.$(shell date +%m%d%H%M)
+    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_PIXEL_RELEASE)-ota-$(BUILD_ID_LC)-SnowCone.$(shell date +%m%d%H%M)
 else
-    PLATFORM_HENTAI_VERSION := $(PLATFORM_HENTAI_RELEASE).INT.$(shell date +%m%d%H%M)
-    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-ota-$(BUILD_ID_LC)-INT.$(shell date +%m%d%H%M)
+    PLATFORM_PIXEL_VERSION := $(PLATFORM_PIXEL_RELEASE).INT.$(shell date +%m%d%H%M)
+    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_PIXEL_RELEASE)-ota-$(BUILD_ID_LC)-INT.$(shell date +%m%d%H%M)
 endif
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.system.hentai.version=$(PLATFORM_HENTAI_VERSION)
+    ro.system.pixel.version=$(PLATFORM_PIXEL_VERSION)
 
-$(call inherit-product-if-exists, vendor/hentai/build/target/product/security/hentai_security.mk)
+$(call inherit-product-if-exists, vendor/pixel/build/target/product/security/pixel_security.mk)
 
 PRODUCT_HOST_PACKAGES += \
     sign_target_files_apks \

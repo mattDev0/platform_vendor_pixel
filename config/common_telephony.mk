@@ -169,4 +169,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 # Inherit from common config now.
-$(call inherit-product, vendor/hentai/config/common.mk)
+$(call inherit-product, vendor/pixel/config/common.mk)

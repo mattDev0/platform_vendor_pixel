@@ -15,7 +15,7 @@
 #
 
 # Networkstack certificate
-PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/hentai/apex/NetworkStack
+PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/pixel/apex/NetworkStack
 
 # Prebuilt module SDKs require prebuilt modules to work, and currently
 # prebuilt modules are only provided for com.google.android.xxx.
@@ -23,7 +23,7 @@ MODULE_BUILD_FROM_SOURCE := false
 
 # Enable Google Play system updates support
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/hentai/apex
+    vendor/pixel/apex
 
 # ModuleMetadata
 PRODUCT_PACKAGES += \
