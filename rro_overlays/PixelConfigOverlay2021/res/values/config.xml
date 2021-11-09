@@ -17,12 +17,11 @@
 */
 -->
 <resources>
-    <!-- Flag indicating whether we should enable the adaptive sleep.-->
-    <bool name="config_adaptive_sleep_available">false</bool>
-
-    <!-- Name of a font family to use for body text. -->
-    <string name="config_bodyFontFamily" translatable="false">harmonyos-sans</string>
-
-    <!-- Name of a font family to use for medium body text. -->
-    <string name="config_bodyFontFamilyMedium" translatable="false">harmonyos-sans-medium</string>
+    <bool name="config_assistLongPressHomeEnabledDefault">false</bool>
+    <bool name="config_assistTouchGestureEnabledDefault">false</bool>
+    <bool name="config_volumeHushGestureEnabled">false</bool>
+    
+    <integer name="config_defaultNightMode">2</integer>
+    <integer name="config_keyChordPowerVolumeUp">2</integer>
+    <integer name="config_longPressOnPowerBehavior">5</integer>
 </resources>
