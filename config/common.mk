@@ -70,6 +70,9 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Inherit from lewdboratory config
 $(call inherit-product-if-exists, vendor/prebuilts/packages.mk)
 
+# Inherit from lawnicons config
+$(call inherit-product-if-exists, vendor/lawnicons/overlay.mk)
+
 # Inherit from apex config
 $(call inherit-product, vendor/pixel/config/apex.mk)
 
