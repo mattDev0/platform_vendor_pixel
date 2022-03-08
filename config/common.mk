@@ -67,11 +67,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/pixel/overlay
 
-# Inherit from gprivate config
-$(call inherit-product-if-exists, vendor/gprivate/gprivate.mk)
-
-# Inherit from rkicons config
-$(call inherit-product-if-exists, vendor/rkicons/overlay.mk)
+# Inherit from lewdboratory config
+$(call inherit-product-if-exists, vendor/prebuilts/packages.mk)
 
 # Inherit from apex config
 $(call inherit-product, vendor/pixel/config/apex.mk)
